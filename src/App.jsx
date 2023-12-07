@@ -9,6 +9,7 @@ import Home from './Pages/Home/Home'
 import NotFound from './Pages/NotFound/NotFound'
 import Plans from './Pages/Plans/Plans'
 import Trainers from './Pages/Trainers/Trainers'
+import Footer from './Components/Footer'
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
     <div>
       <BrowserRouter>
         <Navbar />
+        
         <Routes>
           <Route index element={<Home />} />
           <Route path='about' element={<About />} />
@@ -25,8 +27,9 @@ function App() {
           <Route path='plans' element={<Plans/>} />
           <Route path='trainers' element={<Trainers/>} />
           <Route path='*' element={<NotFound />} />
-         
+      
         </Routes>
+        <Footer/>
       </BrowserRouter>
 
 
