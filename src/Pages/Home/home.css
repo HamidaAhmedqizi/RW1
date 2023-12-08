@@ -37,14 +37,13 @@ margin-top: 3rem;
     background: linear-gradient(75deg,  var(--color-secondary),transparent);
     border-radius: 50%;
     position: absolute;
+    filter: blur(15px);
     transition: var(--transition);
 }
 .main__header-image{
     position: relative;
 }
-.main__header:hover .main__header-circle {
-    filter: blur(15px);
-}
+
 
 .programs{
     margin-top: 4rem;
